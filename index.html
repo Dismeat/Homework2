@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Задание №2</title>
+        <style type="text/css">
+            #id1{
+                width: 10%;
+                height: 80px;
+                border: 1px solid blue;
+                padding: 5px;
+                display:inline-block;
+            }
+            
+            #but1{
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+            }
+            
+            .coments{
+                display: none;
+                flex-direction: column;
+                font-family: 'Segoe UI';
+                overflow: auto;
+                height: 200px;
+            }
+            
+            .items{
+                display:flex;
+                border-bottom: 1px solid blue;
+            }
+            
+            .comity{
+                display: flex;
+            }
+            
+            .memo{
+                height: 80px;
+                width: 100%;
+                resize: none;
+            }
+            .bot{
+                display: inline-block;
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>1. События</h1>
+        <h2>Задание 1.1:</h2>
+        <div id = "id1"></div>
+        <div id = "id1"></div>
+        <div id = "id1"></div>
+        <script src = "script1.js"></script>
+        
+        <h2>Задание 1.2:</h2>
+        <script src = "script2.js"></script>
+        
+        <h4>Кнопка:</h4>
+        <button id = "but1" type="button" data-action="increment" onClick="increment();">
+            <span id="value">0</span>
+        </button>
+        
+        <h2>Задание 1.3:</h2>
+        
+        
+        <h3>Комментарии:</h3>
+        <div class="coments" id = "comit"></div>
+        <div class="comit">
+            <textarea class = "memo" placeholder = "Комментировать..."></textarea>
+            <button class="bot">Отправить</button>
+        </div>
+        
+        <script src = "script3.js"></script>
+        
+        <h2>Задание 1.4:</h2>
+        <div id="container"></div>
+        <script src = "script4.js"></script>
+    </body>
+</html>

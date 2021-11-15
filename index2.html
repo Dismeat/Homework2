@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Практическое задание №2</title>
+        <style type="text/css">
+            #box{
+                width: 350px;
+                height: 500px;
+                
+                padding: 5px;
+                margin: 0px;
+            }
+        </style>
+        <script src="bib1.js" type="text/javascript"></script> 
+    </head>
+    
+    <body>
+        <h1>1. Библиотеки</h1>
+        <h2>Задание 2.1:</h2>
+        <h5>Вывод производится в консоль</h5>
+        <div id="biblio"></div>
+        
+        <script src = "script2.1.js"></script>
+        
+        <h2>Задание 2.2:</h2>
+        
+        <canvas id=canvas width=500 height=500></canvas><br/><br/>
+        <script>
+            let cw = canvas.width, ch = canvas.height;
+            let ctx = document.getElementById("canvas").getContext("2d");
+            let m = 10; // масштаб отображения (0.01 слишком мало)
+            function draw(){
+                for(x = -5 * m; x < 5 * m; x += 1 / m){
+                    if (x >= 1)
+                        eval(y = 5 / x);
+                    else
+                        eval(y = Math.pow(x, 2) - 4 * x);
+                    ctx.fillRect(x * m + cw / 2, ch - (y * m + ch / 2), 1, 1);
+                }
+            }
+            draw();
+        </script>
+        
+        <h2>Задание 2.3:</h2>
+
+        <div id="elem" style=" text-align: center; font-size: 2.5em;margin: 100px auto;">Element</div>
+
+        <script src = "script2.3.js"></script>
+        <script>
+           mkTbl('100px', 3);
+           nGmFftngs();
+        </script>
+
+        <h2>Задание 2.4:</h2>
+
+        <div id="container"></div>
+        
+        <script src = "script2.4.js"></script>
+        
+    </body>
+</html>
